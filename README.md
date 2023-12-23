@@ -53,6 +53,9 @@ The application also provides flexibility in handling images that already exist 
 	```bash
     docker-compose up -d
     ```
+## Implementations
+**Check the folder usage-examples with frontend demos**
+- Added a React example.
 
 ## Notes
 
