@@ -1,5 +1,5 @@
 // In your Next.js page
-import ImageCDN from './ImageCDN';
+import ImageCDN from './components/image-cdn';
 
 const MyPage = () => {
   // Define your custom styles
