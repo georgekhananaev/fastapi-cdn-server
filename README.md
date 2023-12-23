@@ -33,7 +33,7 @@ The application also provides flexibility in handling images that already exist 
 5. **Run the FastAPI server using uvicorn:**
 
     ```bash
-    uvicorn app:main --host 0.0.0.0 --port 8000 --reload
+    uvicorn app:main --host 0.0.0.0 --port 8080 --reload
     ```
 
 ## Automatic Installation (Docker)
@@ -63,6 +63,8 @@ The application also provides flexibility in handling images that already exist 
 - Other settings can be configured by editing config.py
 
 - The server will automatically clear expired files from the cache.
+
+- Swagger UI URL: http://localhost:8000/docs
 
 ## Contributing
 
