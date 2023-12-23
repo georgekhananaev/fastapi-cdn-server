@@ -89,7 +89,7 @@ def update_file_access(file_path):
 async def delete_expired_files():
     """ Periodically check and delete files not present in Redis and remove empty folders """
     while True:
-        await asyncio.sleep(60)  # Check every 60 seconds
+        await asyncio.sleep(60 * 60 * 24)  # Checking files to remove once a day.
         if REDIS_CONNECTED and EXPIRATION_SECONDS > 0:
             # Scan all files in the cache_data directory
             for root, dirs, files in os.walk(CACHE_DIR):
