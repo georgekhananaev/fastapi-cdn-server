@@ -5,17 +5,6 @@ Upon receiving a request with a URL, the server fetches the image, processes it,
 
 The application also provides flexibility in handling images that already exist in the cache. Users can choose whether to overwrite these images or leave them as they are, based on a boolean parameter in the request. All of these features are exposed through a simple and intuitive API, making it easy to integrate with web applications, content management systems, or any platform that requires dynamic image resizing and caching.
 
-### Manual Installation
-
-# FastAPI CDN Server
-
-The FastAPI CDN Server is a FastAPI-based image caching and resizing server with Redis integration for efficient file management. It automatically resizes images into multiple sizes, manages expiration, and supports conditional overwriting. This server is ideal for dynamic web applications and content management systems.
-
-## Prerequisites
-
-- Docker installed on your machine
-- Redis or Dragonfly server installed for caching
-
 ## Getting Started (Manual Installation)
 
 1. **Clone the repository or copy the FastAPI code into a directory.**
@@ -52,13 +41,17 @@ The FastAPI CDN Server is a FastAPI-based image caching and resizing server with
 1. **Build the Docker images:**
 
     ```bash
-    docker-compose build
+    docker-compose build --no-cache
     ```
 
 2. **Run the Docker containers:**
 
     ```bash
     docker-compose up
+    ```
+   or 
+	```bash
+    docker-compose up -d
     ```
 
 ## Notes

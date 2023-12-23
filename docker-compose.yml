@@ -3,10 +3,11 @@ version: '3'
 services:
   # Redis Server
   redis:
-    image: "redis:latest"
-    ports:
-      - "6379:6379"
-    restart: always
+    image: "docker.dragonflydb.io/dragonflydb/dragonfly" # dragonfly instead of redis
+# # Activate the lines below if you want to expose Redis ports to other services
+#    ports:
+#      - "6379:6379"
+#    restart: always
 
   # Python Application
   python-app:
@@ -14,7 +15,7 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "8002:8002"
+      - "8080:8080"
     depends_on:
       - redis
     restart: always
