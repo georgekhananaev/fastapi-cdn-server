@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  # Redis Server
+  redis:
+    image: "redis:latest"
+    ports:
+      - "6379:6379"
+    restart: always
+
+  # Python Application
+  python-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8002:8002"
+    depends_on:
+      - redis
+    restart: always

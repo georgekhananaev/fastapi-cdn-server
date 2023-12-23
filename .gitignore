@@ -1,0 +1,66 @@
+# temporary cache folder
+cache_data/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# .env file
+.env
+
+# Docker
+docker-compose.override.yml
+.docker/
+
+# Python local development server
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.pyc
+
+# Editor-specific files
+.vscode/
+*.sublime-project
+*.sublime-workspace
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw??
+*.log
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.suo
+*.sdf
+*.dbmdl
+*.dbproj.suo
+*.ksh
+[Tt]humbs.db
+*.DS_Store
+*.db
+
+# PyCharm files
+.idea/
+
+# Visual Studio Code files
+.vscode/
+*.code-workspace
+
+# FastAPI auto-generated files
+__pycache__/
+app/__pycache__/
